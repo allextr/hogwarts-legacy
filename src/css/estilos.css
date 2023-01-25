@@ -1,0 +1,247 @@
+body {
+    font-family: 'Poppins';
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+.cabecalho .logo {
+    width: 65px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.player {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 9%;
+    
+}
+
+.cabecalho .Play {
+    font-size: 10px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 10px;
+    
+}
+
+.cabecalho .botao-amarelo {
+    background-color: #f9cc74;
+    border-bottom: 5px solid #685229;
+    
+}
+
+.cabecalho .botao-amarelo:hover {
+    background-color: #ffe5b5;
+    box-shadow: 0px 0px 20px #ffe5b5;
+}
+
+.cabecalho .botao-amarelo:active {
+    position: relative; top: 5px;
+    box-shadow: none;
+}
+
+.cabecalho .Pause {
+    font-size: 10px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.cabecalho .botao-amarelo {
+    background-color: #f9cc74;
+    border-bottom: 5px solid #685229;
+    
+}
+
+.cabecalho .botao-amarelo:hover {
+    background-color: #ffe5b5;
+    box-shadow: 0px 0px 20px #ffe5b5;
+}
+
+.cabecalho .botao-amarelo:active {
+    position: relative; top: 5px;
+    box-shadow: none;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: #F9CC74;
+    font-size: 25px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 131px);
+    padding: 0 30px 30px;
+    overflow: hidden
+}
+
+.container .imagem-titulo {
+    max-width: 350px;
+}
+
+.container .hogwarts {
+    max-width: 650px;
+    
+}
+
+.container .descricao {
+    color: #f9CC74;
+    width: 50%;
+    font-size: 10px;
+    margin: 30px 0;
+}
+
+.cabecalho .Home {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition: 0.5s all
+    ease-in-out;
+}
+
+.cabecalho .Detalhes {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition: 0.5s all 
+    ease-in-out;
+}
+
+.cabecalho .menu .Home:hover {
+    transform: scale(1.1);
+}
+
+.cabecalho .menu .Detalhes:hover {
+    transform: scale(1.1);
+}
+
+.container .botao-trailer {
+    background-color: #685229;
+    color: #ffe5b5;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+    
+
+}
+
+.container .botao-trailer:hover{
+    transform: scale(1.1);
+    background-color: #ffe5b5;
+    box-shadow: 0px 0px 20px #ffe5b5;
+    color: #685229;
+}
+
+.container .botao-trailer:active{
+    position: relative; top: 5px;
+    box-shadow: none;
+}
+    
+
+.fundo-video {
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.30300245098039214) 50%, rgba(0,0,0,1) 100%);
+
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+
+}
+
+.fechar-modal {
+    background-color: #ffffff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.fechar-modal:active {
+    position: relative; top: 5px;
+    box-shadow: none;
+}
+
+.modal iframe{
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
+
+
